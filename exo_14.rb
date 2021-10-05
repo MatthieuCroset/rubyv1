@@ -10,10 +10,11 @@ arr= [ ]
       arr << "jean.dupont.#{i +=1}@email.fr"
       end
    
-  
-
-
-
   end
   
-  puts arr
+ arr.each_with_index { |arr, index|
+  if index % 2 == 1
+    puts arr
+    end
+  }
+
