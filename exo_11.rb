@@ -1,13 +1,13 @@
-puts "année de naissance stp :"
+puts "ton âge stp :"
 print "> "
 nb = gets.chomp.to_i
 nb2 = nb
 
 
-until nb>2021
+until nb==0
  
-  puts " Il y a #{2021-nb} ans tu avais #{nb-nb2} ans "
-  nb += 1
+  puts " Il y a #{nb} ans tu avais #{nb2-nb} ans "
+  nb -= 1
 
 
 end
